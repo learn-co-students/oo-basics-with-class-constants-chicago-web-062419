@@ -7,7 +7,7 @@ describe 'Shoe' do
       brands = ["Uggs", "Rainbow"]
       brands.each do |brand|
         Shoe.new(brand)
-      end
+      end #creates new instance of Shoe for each element in brands array
 
       brands.each do |brand|
         expect(Shoe::BRANDS).to include(brand)
